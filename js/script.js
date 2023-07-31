@@ -7,7 +7,7 @@ let startPos = 0;
 let scrollTop;
 
 	window.addEventListener('scroll', function () {
-		scrollTop = window.pageYOffset;
+		scrollTop = window.scrollY;
 
 		if (scrollTop > headerHeight) {
 			header.classList.add('is-hide');
