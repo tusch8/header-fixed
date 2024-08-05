@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  --transition: 0.6s;
+  --duration: 0.6s;
   display: grid;
   place-items: center;
   position: absolute;
@@ -28,14 +28,14 @@ body {
 .header.is-hide {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity var(--transition), visibility var(--transition);
-  transition: opacity var(--transition), visibility var(--transition);
+  -webkit-transition: opacity var(--duration), visibility var(--duration);
+  transition: opacity var(--duration), visibility var(--duration);
 }
 .header.is-show {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity var(--transition), visibility var(--transition);
-  transition: opacity var(--transition), visibility var(--transition);
+  -webkit-transition: opacity var(--duration), visibility var(--duration);
+  transition: opacity var(--duration), visibility var(--duration);
 }
 .header .header__txt {
   font-size: 18px;
